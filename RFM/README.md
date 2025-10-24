@@ -134,5 +134,8 @@ select distinct COUNTRY from sales_data;
 ```sql
 SELECT MAX(STR_TO_DATE(ORDERDATE,'%d/%m/%y')) as last_business_date FROM sales_data;-- 2005-05-31 
 ```
-  
+-- OUTPUT --
+| last_business_date |
+|-------------------|
+| 2005-05-31        |
 
