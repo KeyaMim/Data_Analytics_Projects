@@ -63,6 +63,11 @@ SELECT * FROM sales_data LIMIT 5;
 ```sql
 SELECT COUNT(*) FROM sales_data;-- 2823
 ```
+-- OUTPUT --
+| COUNT(*) |
+|----------|
+| 2823     |
+
 
 
 
