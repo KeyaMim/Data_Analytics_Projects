@@ -92,6 +92,45 @@ select distinct year_id from sales_data;
 | 2004    |
 | 2005    |
 
+select distinct PRODUCTLINE from SALES_SAMPLE_DATA;
+```
+-- OUTPUT --
+| PRODUCTLINE      |
+|------------------|
+| Motorcycles      |
+| Classic Cars     |
+| Trucks and Buses |
+| Vintage Cars     |
+| Planes           |
+| Ships            |
+| Trains           |
+
+```sql
+select distinct COUNTRY from sales_data;
+```
+-- OUTPUT --
+| COUNTRY     |
+|-------------|
+| USA         |
+| France      |
+| Norway      |
+| Australia   |
+| Finland     |
+| Austria     |
+| UK          |
+| Spain       |
+| Sweden      |
+| Singapore   |
+| Canada      |
+| Japan       |
+| Italy       |
+| Denmark     |
+| Belgium     |
+| Philippines |
+| Germany     |
+| Switzerland |
+| Ireland     |
+
 
   
 
