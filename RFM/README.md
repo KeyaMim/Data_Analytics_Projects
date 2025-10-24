@@ -41,4 +41,10 @@ CONTACTFIRSTNAME TEXT,
 DEALSIZE TEXT
 );
 ```
+### Import Wizard Data
+Data insertion into the `sales_data` table was performed using the **Import Wizard** tool.
+
+
+
+  
 
