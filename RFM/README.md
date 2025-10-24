@@ -131,6 +131,8 @@ select distinct COUNTRY from sales_data;
 | Switzerland |
 | Ireland     |
 
-
+```sql
+SELECT MAX(STR_TO_DATE(ORDERDATE,'%d/%m/%y')) as last_business_date FROM sales_data;-- 2005-05-31 
+```
   
 
