@@ -68,6 +68,19 @@ SELECT COUNT(*) FROM sales_data;-- 2823
 |----------|
 | 2823     |
 
+## Checking unique values
+```sql
+select distinct status from sales_data;
+```
+-- OUTPUT --
+| status     |
+|------------|
+| Shipped    |
+| Disputed   |
+| In Process |
+| Cancelled  |
+| On Hold    |
+| Resolved   |
 
 
 
