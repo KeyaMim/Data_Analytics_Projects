@@ -161,5 +161,18 @@ SELECT
 FROM sales_data
 GROUP BY customername;
 ```
+### Sample Output
+
+The result of the query for selected customers (showing first 5 rows):
+
+| customername                  | total_qty_order | recency_Value | frequency_Value | monitary_Value |
+|-------------------------------|----------------|---------------|----------------|----------------|
+| Alpha Cognac                  | 687            | 64            | 3              | 70488          |
+| Amica Models & Co.            | 843            | 264           | 2              | 94117          |
+| Anna's Decorations, Ltd       | 1469           | 83            | 4              | 153996         |
+| Atelier graphique             | 270            | 187           | 3              | 24180          |
+| Australian Collectables, Ltd  | 705            | 22            | 3              | 64591          |
+| …                             | …              | …             | …              | …              |
+
 
 
