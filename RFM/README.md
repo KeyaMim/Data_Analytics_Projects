@@ -263,4 +263,6 @@ SELECT
     END AS customer_segment
 FROM RFM_COMBINATION;
 ```
-
+```sql
+SELECT * FROM RFM_SEGMENTATION_DETAIL;
+```
