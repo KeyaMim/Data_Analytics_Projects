@@ -314,6 +314,9 @@ SELECT * FROM RFM_SEGMENT_AGG;
 | Needs Attention        | 7              | 431,446     | 61,635    | 14          | 4,363          |
 | ...                    | ...            | ...         | ...       | ...         | ...            |
 
+Customers are scored based on their Recency, Frequency, and Monetary (RFM) values.  
+Using these scores, they are grouped into meaningful segments.  
+For each segment, we’ve calculated aggregated metrics like total spend, average spend, total orders, and total quantity to better understand customer
 
 
 
