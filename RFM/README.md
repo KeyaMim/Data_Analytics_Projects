@@ -266,3 +266,22 @@ FROM RFM_COMBINATION;
 ```sql
 SELECT * FROM RFM_SEGMENTATION_DETAIL;
 ```
+### Output
+| Customer Name                  | RFM Combination | Customer Segment       |
+|--------------------------------|----------------|----------------------|
+| Alpha Cognac                   | 442            | Potential Loyalists   |
+| Amica Models & Co.             | 113            | About to Sleep        |
+| Anna's Decorations, Ltd        | 455            | VIP                   |
+| Atelier graphique              | 331            | Promising Customers   |
+| Australian Collectables, Ltd   | 521            | Potential Loyalists   |
+| Australian Collectors, Co.     | 355            | Loyal Customers       |
+| ...                            | ...            | ...                   |
+
+
+
+
+
+
+
+
+
