@@ -174,5 +174,45 @@ The result of the query for selected customers (showing first 5 rows):
 | Australian Collectables, Ltd  | 705            | 22            | 3              | 64591          |
 | …                             | …              | …             | …              | …              |
 
+**RFM Score Calculation per Customer
+```sql
+WITH CLV AS 
+(
+  SELECT 
+      customername,
+      MAX(STR_TO_DATE(ORDERDATE,'%d/%m/%y')) AS customer_last_transaction_date,
+      SUM(QUANTITY) AS total_qty_order,
+      DATEDIFF(
+          (SELECT MAX(STR_TO_DATE(ORDERDATE,'%d/%m/%y')) FROM sales_data),
+          MAX(STR_TO_DATE(ORDERDATE,'%d/%m/%y'))
+      ) AS recency_Value,
+      COUNT(DISTINCT ORDER_NUMBER) AS frequency_Value,
+      ROUND(SUM(SALES),0) AS monitary_Value
+  FROM sales_data
+  GROUP BY customername
+),
 
+RFM_SCORE AS
+(
+  SELECT 
+      C.*,
+      NTILE(5) OVER(ORDER BY recency_value DESC) AS R_SCORE,
+      NTILE(5) OVER(ORDER BY frequency_value ASC) AS F_SCORE,
+      NTILE(5) OVER(ORDER BY monitary_value ASC) AS M_SCORE
+  FROM CLV AS C
+)
+SELECT 
+    customername,
+    R_SCORE + F_SCORE + M_SCORE AS Total_RFM_Score,
+    CONCAT_WS('', R_SCORE, F_SCORE, M_SCORE) AS RFM_Combination
+FROM RFM_SCORE AS RS;
+```
+### Sample Output
+| Customer Name           | Total_RFM_Score | RFM_Combination |
+| ----------------------- | --------------- | --------------- |
+| Boards & Toys Co.       | 7               | 421             |
+| Atelier graphique       | 7               | 331             |
+| Auto-Moto Classics Inc. | 7               | 331             |
+| Microscale Inc.         | 4               | 211             |
+| ...                     | ...             | ...             |
 
