@@ -303,6 +303,16 @@ GROUP BY customer_segment;
 ```sql
 SELECT * FROM RFM_SEGMENT_AGG;
 ```
+### Output
+
+| customer_segment       | Total_Customers | Total_Spend | Avg_Spend | Total_order | Total_qty_order |
+|------------------------|----------------|-------------|-----------|-------------|----------------|
+| VIP                    | 17             | 3,686,315   | 216,842   | 103         | 36,138         |
+| Promising Customers    | 18             | 1,343,725   | 74,651    | 53          | 13,173         |
+| Potential Loyalists    | 7              | 409,484     | 58,498    | 20          | 4,051          |
+| Potential Customers    | 7              | 859,176     | 122,739   | 23          | 8,561          |
+| Needs Attention        | 7              | 431,446     | 61,635    | 14          | 4,363          |
+| ...                    | ...            | ...         | ...       | ...         | ...            |
 
 
 
