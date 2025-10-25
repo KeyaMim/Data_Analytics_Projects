@@ -277,7 +277,32 @@ SELECT * FROM RFM_SEGMENTATION_DETAIL;
 | Australian Collectors, Co.     | 355            | Loyal Customers       |
 | ...                            | ...            | ...                   |
 
+## Aggregated RFM Segment Data
 
+**The following query calculates aggregated metrics at the segment level** 
+For each customer segment, it computes:
+
+ **Total_Customers**: Number of customers in that segment  
+  **Total_Spend**: Total monetary value spent by customers  
+  **Avg_Spend**: Average monetary value per customer  
+ **Total_order**: Total number of orders placed  
+ **Total_qty_order**: Total quantity of items ordered  
+
+```sql
+CREATE VIEW RFM_SEGMENT_AGG AS
+SELECT
+    customer_segment,
+    COUNT(customername) AS Total_Customers,  
+    SUM(monitary_Value) AS Total_Spend,
+    ROUND(AVG(monitary_Value),0) AS Avg_Spend,
+    SUM(frequency_value) AS Total_order,
+    SUM(total_qty_order) AS Total_qty_order
+FROM RFM_SEGMENTATION_DATA 
+GROUP BY customer_segment;
+```
+```sql
+SELECT * FROM RFM_SEGMENT_AGG;
+```
 
 
 
