@@ -131,3 +131,8 @@ SELECT INVOICENO FROM RETAIL_SALES WHERE INVOICENO LIKE 'C%';
 ```sql
 SELECT COUNT(*) FROM RETAIL_SALES WHERE QUANTITY <= 0;-- '10624'
 ```
+### Rows with Non-Positive Quantity
+
+| COUNT(*) |
+|----------|
+| 10624    |
