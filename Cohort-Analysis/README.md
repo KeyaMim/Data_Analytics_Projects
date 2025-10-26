@@ -51,4 +51,6 @@ SELECT COUNT(*) FROM retail_sales;-- '541909'
 | 541,909  |
 
 ## Checking Null or Empty
-
+```sql
+SELECT * FROM retail_sales WHERE CustomerID IS NULL;
+```
