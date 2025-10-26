@@ -148,4 +148,8 @@ SELECT COUNT(*) FROM RETAIL_SALES WHERE CUSTOMERID IS  NOT NULL; -- 406829
 | 406829   |
 
 ### Cohort Analysis [Customer Retention]
+**Preparing Valid Sales Data**
+The following CTE prepares valid sales data*for analysis. Since `INVOICEDATE` was stored as a string, it is formatted to a proper DATETIME.
+
+
 
