@@ -63,4 +63,15 @@ SELECT * FROM retail_sales WHERE CustomerID IS NULL;
 | 536544    | 21773     | DECORATIVE ROSE BATHROOM BOTTLE   | 1       | 12/01/2010 14:32 | 2.51      | NULL       | United Kingdom |
 | 536544    | 21774     | DECORATIVE CATS BATHROOM BOTTLE  | 2       | 12/01/2010 14:32 | 2.51      | NULL       | United Kingdom |
 ...
-
+```sql
+SELECT *
+FROM retail_sales
+WHERE InvoiceNo IS NULL OR InvoiceNo = ''
+   OR StockCode IS NULL OR StockCode = ''
+   OR Description IS NULL OR Description = ''
+   OR Quantity IS NULL OR Quantity = ''
+   OR InvoiceDate IS NULL OR InvoiceDate = ''
+   OR UnitPrice IS NULL OR UnitPrice = ''
+   OR CustomerID IS NULL OR CustomerID = ''
+   OR Country IS NULL OR Country = '';
+```
