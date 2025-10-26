@@ -29,5 +29,9 @@ CREATE TABLE retail_sales (
 );
 ```
 - Import Data Using Python
+## Dataset Exploration
+```sql
+SELECT * FROM retail_sales LIMIT 5;
+```
   
 
