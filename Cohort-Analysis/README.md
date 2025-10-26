@@ -42,5 +42,6 @@ SELECT * FROM retail_sales LIMIT 5;
 | 536365    | 84406B    | CREAM CUPID HEARTS COAT HANGER | 8 | 12/01/2010 08:26 | 2.75 | 17850 | United Kingdom |
 | 536365    | 84029G    | KNITTED UNION FLAG HOT WATER BOTTLE | 6 | 12/01/2010 08:26 | 3.39 | 17850 | United Kingdom |
 | 536365    | 84029E    | RED WOOLLY HOTTIE WHITE HEART | 6 | 12/01/2010 08:26 | 3.39 | 17850 | United Kingdom |
-  
-
+```sql  
+SELECT COUNT(*) FROM retail_sales;-- '541909'
+```
