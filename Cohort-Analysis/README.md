@@ -45,3 +45,4 @@ SELECT * FROM retail_sales LIMIT 5;
 ```sql  
 SELECT COUNT(*) FROM retail_sales;-- '541909'
 ```
+-- Output --
