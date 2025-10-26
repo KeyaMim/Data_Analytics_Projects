@@ -136,3 +136,5 @@ SELECT COUNT(*) FROM RETAIL_SALES WHERE QUANTITY <= 0;-- '10624'
 | COUNT(*) |
 |----------|
 | 10624    |
+
+## Valid Customer ID Count For Analysis
