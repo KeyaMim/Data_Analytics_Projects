@@ -12,3 +12,4 @@ Using cohort analysis in this online retail project helps to uncover customer be
 - **Improve Retention** – Identify patterns in customer behavior to increase repeat purchases over time.  
 - **Targeted Marketing** – Use cohort insights to design campaigns for specific customer groups.  
 - **Focus on High-Value Customers** – Discover which cohorts contribute the most revenue and prioritize them for business strategies.
+## Data Preparation
