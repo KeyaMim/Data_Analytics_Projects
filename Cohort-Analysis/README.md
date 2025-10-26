@@ -100,3 +100,10 @@ SELECT DISTINCT COUNTRY FROM retail_sales;
 ```sql
 SELECT DISTINCT CUSTOMERID FROM RETAIL_SALES; 
 ```
+-- Output --
+| CustomerID |
+|------------|
+| 17850      |
+| 13047      |
+| 12583      |
+| ...        |
