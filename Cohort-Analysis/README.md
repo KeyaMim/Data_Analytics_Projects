@@ -46,3 +46,6 @@ SELECT * FROM retail_sales LIMIT 5;
 SELECT COUNT(*) FROM retail_sales;-- '541909'
 ```
 -- Output --
+| COUNT(*) |
+|----------|
+| 541,909  |
