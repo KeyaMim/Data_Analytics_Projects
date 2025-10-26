@@ -28,3 +28,6 @@ CREATE TABLE retail_sales (
     Country VARCHAR(50)
 );
 ```
+- Import Data Using Python
+  
+
