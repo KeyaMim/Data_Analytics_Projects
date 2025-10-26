@@ -75,3 +75,10 @@ WHERE InvoiceNo IS NULL OR InvoiceNo = ''
    OR CustomerID IS NULL OR CustomerID = ''
    OR Country IS NULL OR Country = '';
 ```
+## Output
+| InvoiceNo | StockCode | Description | Quantity | InvoiceDate       | UnitPrice | CustomerID | Country        |
+|-----------|-----------|-------------|-----------|-------------------|-----------|------------|----------------|
+| 536414    | 22139     | NULL        | 56        | 12/01/2010 11:52 | 0.00      | NULL       | United Kingdom |
+| 536545    | 21134     | NULL        | 1         | 12/01/2010 14:32 | 0.00      | NULL       | United Kingdom |
+| 536546    | 22145     | NULL        | 1         | 12/01/2010 14:33 | 0.00      | NULL       | United Kingdom |
+| …         | …         | …           | …         | …                 | …         | …          | …              |
