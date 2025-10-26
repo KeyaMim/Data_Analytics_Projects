@@ -54,3 +54,13 @@ SELECT COUNT(*) FROM retail_sales;-- '541909'
 ```sql
 SELECT * FROM retail_sales WHERE CustomerID IS NULL;
 ```
+-- OUTPUT --
+## Sample Data
+
+| InvoiceNo | StockCode | Description                        | Quantity | InvoiceDate       | UnitPrice | CustomerID | Country        |
+|-----------|-----------|------------------------------------|---------|-----------------|-----------|------------|----------------|
+| 536414    | 22139     | NULL                               | 56      | 12/01/2010 11:52 | 0.00      | NULL       | United Kingdom |
+| 536544    | 21773     | DECORATIVE ROSE BATHROOM BOTTLE   | 1       | 12/01/2010 14:32 | 2.51      | NULL       | United Kingdom |
+| 536544    | 21774     | DECORATIVE CATS BATHROOM BOTTLE  | 2       | 12/01/2010 14:32 | 2.51      | NULL       | United Kingdom |
+...
+
