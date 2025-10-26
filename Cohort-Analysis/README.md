@@ -14,11 +14,9 @@ Using cohort analysis in this online retail project helps to uncover customer be
 - **Focus on High-Value Customers** – Discover which cohorts contribute the most revenue and prioritize them for business strategies.
 ## Data Preparation
 
+- Create a database `online_retail_db`.
 ```sql
--- Create database
 CREATE DATABASE online_retail_db;
-
--- Create retail_sales table
 CREATE TABLE retail_sales (
     InvoiceNo VARCHAR(50),
     StockCode VARCHAR(50),
