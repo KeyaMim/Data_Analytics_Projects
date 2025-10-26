@@ -115,3 +115,8 @@ SELECT min(Quantity) FROM RETAIL_SALES; --  min(Quantity)'-80995'
 | min(Quantity) |
 |---------------|
 | -80995        |
+
+## Cancelled Order
+```sql
+SELECT INVOICENO FROM RETAIL_SALES WHERE INVOICENO LIKE 'C%';
+```
