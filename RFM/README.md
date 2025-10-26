@@ -92,7 +92,7 @@ select distinct year_id from sales_data;
 | 2004    |
 | 2005    |
 
-select distinct PRODUCTLINE from SALES_SAMPLE_DATA;
+select distinct PRODUCTLINE from sales_data;
 ```
 -- OUTPUT --
 | PRODUCTLINE      |
