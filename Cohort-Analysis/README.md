@@ -151,5 +151,14 @@ SELECT COUNT(*) FROM RETAIL_SALES WHERE CUSTOMERID IS  NOT NULL; -- 406829
 **Preparing Valid Sales Data**
 The following CTE prepares valid sales data*for analysis. Since `INVOICEDATE` was stored as a string, it is formatted to a proper DATETIME.
 
+## Output 
+| CUSTOMERID | FORMATTED_DATE       | SALE_VALUE |
+|------------|--------------------|------------|
+| 17850      | 2010-12-01 08:26:00 | 15.30      |
+| 17850      | 2010-12-01 08:26:00 | 20.34      |
+| 17850      | 2010-12-01 08:26:00 | 22.00      |
+| 17850      | 2010-12-01 08:26:00 | 20.34      |
+| ...        | ...                 | ...        |
+
 
 
