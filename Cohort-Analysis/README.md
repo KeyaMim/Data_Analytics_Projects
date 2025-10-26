@@ -146,3 +146,6 @@ SELECT COUNT(*) FROM RETAIL_SALES WHERE CUSTOMERID IS  NOT NULL; -- 406829
 | COUNT(*) |
 |----------|
 | 406829   |
+
+### Cohort Analysis [Customer Retention]
+
