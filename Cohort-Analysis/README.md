@@ -49,3 +49,6 @@ SELECT COUNT(*) FROM retail_sales;-- '541909'
 | COUNT(*) |
 |----------|
 | 541,909  |
+
+## Checking Null or Empty
+
