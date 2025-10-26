@@ -85,3 +85,14 @@ WHERE InvoiceNo IS NULL OR InvoiceNo = ''
 ```sql
 SELECT DISTINCT COUNTRY FROM retail_sales;  
 ```
+--Output--
+| COUNTRY |
+|----------|
+| United Kingdom |
+| France |
+| Australia |
+| Netherlands |
+| Germany |
+| ... |
+
+
