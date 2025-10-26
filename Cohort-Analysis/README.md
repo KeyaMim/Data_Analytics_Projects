@@ -127,3 +127,7 @@ SELECT INVOICENO FROM RETAIL_SALES WHERE INVOICENO LIKE 'C%';
 | C536383    |
 | C536391    |
 | ...        |
+## These rows likely correspond to cancelled orders or returns. It’s important to identify them before performing cohort or retention analysis.
+```sql
+SELECT COUNT(*) FROM RETAIL_SALES WHERE QUANTITY <= 0;-- '10624'
+```
