@@ -33,5 +33,6 @@ CREATE TABLE retail_sales (
 ```sql
 SELECT * FROM retail_sales LIMIT 5;
 ```
+### Sample Output of `retail_sales` Table
   
 
