@@ -107,3 +107,7 @@ SELECT DISTINCT CUSTOMERID FROM RETAIL_SALES;
 | 13047      |
 | 12583      |
 | ...        |
+## Minimum Quantities Check
+```sql
+SELECT min(Quantity) FROM RETAIL_SALES; --  min(Quantity)'-80995'
+```
