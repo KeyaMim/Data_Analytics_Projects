@@ -111,3 +111,7 @@ SELECT DISTINCT CUSTOMERID FROM RETAIL_SALES;
 ```sql
 SELECT min(Quantity) FROM RETAIL_SALES; --  min(Quantity)'-80995'
 ```
+-- Output --
+| min(Quantity) |
+|---------------|
+| -80995        |
