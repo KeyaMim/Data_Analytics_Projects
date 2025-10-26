@@ -82,3 +82,6 @@ WHERE InvoiceNo IS NULL OR InvoiceNo = ''
 | 536545    | 21134     | NULL        | 1         | 12/01/2010 14:32 | 0.00      | NULL       | United Kingdom |
 | 536546    | 22145     | NULL        | 1         | 12/01/2010 14:33 | 0.00      | NULL       | United Kingdom |
 | …         | …         | …           | …         | …                 | …         | …          | …              |
+```sql
+SELECT DISTINCT COUNTRY FROM retail_sales;  
+```
