@@ -175,5 +175,18 @@ SELECT * FROM CTE1;
 | 17850      | 2010-12-01 08:26:00 | 20.34      |
 | ...        | ...                 | ...        |
 
+### First Transaction and Purchase Month
+(CTE2) calculates **each customer’s first transaction date** and **assigns purchase months** for cohort analysis:
 
-
+```sql
+WITH CTE2 AS (
+    SELECT
+        CUSTOMERID,
+        FORMATTED_DATE AS PURCHASE_DATE,
+        MIN(FORMATTED_DATE) OVER (PARTITION BY CUSTOMERID) AS FIRST_TRANSACTION_DATE,
+        DATE_FORMAT(FORMATTED_DATE, '%Y-%m-01') AS PURCHASE_MONTH,
+        DATE_FORMAT(MIN(FORMATTED_DATE) OVER (PARTITION BY CUSTOMERID), '%Y-%m-01') AS FIRST_TRANSACTION_MONTH
+    FROM CTE1
+)
+SELECT * FROM CTE2;
+```
