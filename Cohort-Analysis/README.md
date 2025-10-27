@@ -199,7 +199,23 @@ SELECT * FROM CTE2;
 | 12347       | 2011-01-26 14:30:00  | 2010-12-07 14:57:00    | 2011-01-01     | 2010-12-01              |
 | ...         | ...                  | ...                    | ...            | ...                     |
 
+### Cohort Retention Calculation
+This QUERY creates the cohort month for each customer and builds the final cohort retention Table
+```sql
+CTE3 AS
+(SELECT 
+	CUSTOMERID,
+    FIRST_TRANSACTION_DATE,
+    PURCHASE_DATE,
+   
+	CONCAT(
+		'Month_',
+		ROUND(DATEDIFF(PURCHASE_DATE, FIRST_TRANSACTION_DATE)/30, 0)
+        ) AS COHORT_MONTH,
+    DATE_FORMAT(PURCHASE_DATE, '%Y-%m-01') as PURCHASE_MONTH,
+    DATE_FORMAT(FIRST_TRANSACTION_DATE, '%Y-%m-01') AS FIRST_TRANSACTION_MONTH
+FROM CTE2)
 
-
-
+SELECT * FROM CTE3;
+```
 
