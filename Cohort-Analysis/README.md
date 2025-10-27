@@ -218,7 +218,7 @@ FROM CTE2)
 
 SELECT * FROM CTE3;
 ```
-## Sample Output – Cohort Month Calculation (CTE3)
+### Sample Output – Cohort Month Calculation (CTE3)
 
 | CUSTOMERID | FIRST_TRANSACTION_DATE | PURCHASE_DATE        | COHORT_MONTH | PURCHASE_MONTH | FIRST_TRANSACTION_MONTH |
 |-------------|------------------------|----------------------|---------------|----------------|-------------------------|
